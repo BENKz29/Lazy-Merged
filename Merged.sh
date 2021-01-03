@@ -1,4 +1,7 @@
+#! /bin/bash
 #Ahhh-This-Lol-Script
+
+echo "Merged Platform Sourced Kernel"
 
 git config --global user.name "Calliope-K"
 git config --global user.email "firsname76@gmail.com"
@@ -20,3 +23,5 @@ git merge -s ours --no-commit FETCH_HEAD --allow-unrelated-histories
 git read-tree --prefix=drivers/staging/qca-wifi-host-cmn -u FETCH_HEAD
 git commit -m Qca-Wifi-Host --signoff
 git push https://$GITHUB_TOKEN@github.com/Calliope-K/Tea-WIP.git
+
+echo "Finished"
