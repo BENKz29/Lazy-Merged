@@ -1,7 +1,7 @@
 #! /bin/bash
 #Ahhh-This-Lol-Script
 
-echo" "
+echo " "
 echo "Merged Platform Sourced Kernel"
 
 #Connect_to_account
@@ -30,5 +30,5 @@ git read-tree --prefix=drivers/staging/qca-wifi-host-cmn -u FETCH_HEAD
 git commit -m Qca-Wifi-Host --signoff
 git push https://$GITHUB_TOKEN@github.com/Calliope-K/Tea-WIP.git
 
-echo" "
+echo " "
 echo "Finished"
