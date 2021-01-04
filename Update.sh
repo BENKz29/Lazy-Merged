@@ -8,10 +8,6 @@ echo "Update Platform Sourced Kernel"
 git config --global user.name "Calliope-K"
 git config --global user.email "firsname76@gmail.com"
 
-#Cloning_Source
-git clone https://github.com/Calliope-K/Tea-WIP -b WIP-4.19
-cd Tea-WIP
-
 #Execute_Script_Merged_qcacld
 git remote add qcacld https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0
 git fetch qcacld LA.UM.7.2.r1-09600-sdm660.0
