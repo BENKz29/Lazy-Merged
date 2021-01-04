@@ -5,6 +5,3 @@ Using Ci If You Need Merged "qcacld//Fw-api//Wifi-cm-host" So Easy Hahaha ðŸ¤£ðŸ
       curl https://raw.githubusercontent.com/Calliope-K/Lazy-Merged/main/Merged.sh > run.sh > source run.sh
 ### Example Using Command: if Use DroneCi
       curl https://raw.githubusercontent.com/Calliope-K/Lazy-Merged/main/Merged.sh | bash
-### Example Using Command: if Local 
-#### ( Use Terminal Linux & orther )
-      curl https://raw.githubusercontent.com/Calliope-K/Lazy-Merged/main/Merged.sh | bash
