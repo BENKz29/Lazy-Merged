@@ -30,7 +30,7 @@ git read-tree --prefix=drivers/staging/qca-wifi-host-cmn -u FETCH_HEAD
 git commit -m "qca-wifi-host into LA.UM.7.2.r1-09600-sdm660.0" --signoff
 
 #Push
-git push https://$GITHUB_TOKEN@github.com/Calliope-K/Tea-WIP.git
+git push https://$GITHUB_TOKEN@github.com/TeaProject/android-kernel-sdm660.git
 
 echo " "
 echo "Finished"
