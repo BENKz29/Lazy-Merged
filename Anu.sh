@@ -25,7 +25,7 @@ echo " "
 echo "anu..... Starting"
 echo " "
 git merge --no-commit FETCH_HEAD
-git commit -m Anu-Merged-Kramel --signoff
+git commit -m "Anu-Merged-Kramel" --signoff
 
 echo "push"
 echo " "
