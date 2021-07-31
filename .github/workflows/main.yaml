@@ -24,6 +24,6 @@ jobs:
       run: |
         bash merged
       env:
-        GITHUB_EMAIL: ${{ EMAIL }}
-        GITHUB_USER: ${{ USERNAME }}
-        TAG: ${{ TAG }}
+        GITHUB_EMAIL: $EMAIL
+        GITHUB_USER: $USERNAME
+        TAG: $TAG
