@@ -22,7 +22,7 @@ jobs:
         git config --global user.email "${GITHUB_EMAIL}"
     - name: start
       run: |
-	bash merged
+        bash merged
       env:
         GITHUB_EMAIL: ${{ EMAIL }}
         GITHUB_USER: ${{ USERNAME }}
