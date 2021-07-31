@@ -27,7 +27,7 @@ jobs:
       run: |
         git push https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/"${GITHUB_USER}"/"${REPO}"
       env:
-        GITHUB_EMAIL: $EMAIL
+        GITHUB_EMAIL: $GMAIL
         GITHUB_USER: $USERNAME
         REPO: $REPO
         TAG: $TAG
