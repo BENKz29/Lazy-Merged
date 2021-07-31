@@ -1,0 +1,30 @@
+name: initial merge qcacld
+
+on:
+  push:
+  schedule:
+    - cron: '0 0 * * 0,4'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y git
+    - name: acc github
+      run: |
+	git config --global user.name "${GITHUB_USER}"
+        git config --global user.email "${GITHUB_EMAIL}"
+	
+    - name: start
+      run: |
+	bash merged
+      env:
+	GITHUB_EMAIL: ${{ EMAIL }}
+	GITHUB_USER: ${{ USERNAME }}
+        TAG: ${{ TAG }}
