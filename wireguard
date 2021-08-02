@@ -1,10 +1,18 @@
 #! /bin/bash
 
+USERNAME="vcyzteen"
+GMAIL="vcyzscape@gmail.com"
+TAG="stable"
+
+# acc
+git config --global user.name "$USERNAME"
+git config --global user.email "$GMAIL"
+
 # wireguard
 git remote add Guard https://git.zx2c4.com/wireguard-linux
-git fetch Guard stable
+git fetch Guard $TAG
 git merge --no-commit FETCH_HEAD
-git commit -m "Importing Wireguard" --signoff
+git commit -m "Importing Wireguard into kernel" --signoff
 
 # push
 git push
