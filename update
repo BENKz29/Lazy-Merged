@@ -1,6 +1,12 @@
 #! /bin/bash
 
+USERNAME="vcyzteen"
+GMAIL="vcyzscape@gmail.com"
 TAG=""
+
+# acc
+git config --global user.name "$USERNAME"
+git config --global user.email "$GMAIL"
 
 # update qcacld
 git remote add qcacld https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0
