@@ -1,12 +1,6 @@
 #! /bin/bash
 
-USERNAME="vcyzteen"
-GMAIL="vcyzscape@gmail.com"
 TAG="stable"
-
-# acc
-git config --global user.name "$USERNAME"
-git config --global user.email "$GMAIL"
 
 # wireguard
 git remote add Guard https://git.zx2c4.com/wireguard-linux
