@@ -26,7 +26,7 @@ jobs:
         cd Baka-Msm-4.14
     - name: start
       run: |
-        curl https://raw.githubusercontent.com/vcyzteen/Lazy-Merged/main/merged | bash
+        curl https://raw.githubusercontent.com/vcyzteen/Lazy-Merged/main/mergedXupdate | bash
     - name: push
       run: |
         git push https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/Baka-Project/Baka-Msm-4.14.git baka-4.14
