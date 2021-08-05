@@ -16,14 +16,14 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y git
-    - name: acc github
-      run: |
-        git config --global user.name "${GITHUB_USER}"
-        git config --global user.email "${GITHUB_EMAIL}"
     - name: clone source and open dir
       run: |
         git clone https://github.com/Baka-Project/Baka-Msm-4.14.git
         cd Baka-Msm-4.14
+    - name: acc github
+      run: |
+        git config --global user.name "${GITHUB_USER}"
+        git config --global user.email "${GITHUB_EMAIL}"
     - name: start
       run: |
         curl https://raw.githubusercontent.com/vcyzteen/Lazy-Merged/main/mergedXupdate | bash
