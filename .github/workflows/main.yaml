@@ -21,7 +21,7 @@ jobs:
         git clone https://github.com/Baka-Project/Baka-Msm-4.14.git && cd Baka-Msm-4.14
     - name: start
       run: |
-        curl https://raw.githubusercontent.com/"${GITHUB_USER}"/Lazy-Merged/main/mergedXupdate | bash
+        curl https://raw.githubusercontent.com/"${GITHUB_USER}"/Lazy-Merged/main/mergedXupdate > run.sh > source run.sh
     - name: push
       run: |
         git push https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/Baka-Project/Baka-Msm-4.14.git baka-4.14
