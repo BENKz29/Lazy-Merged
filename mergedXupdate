@@ -1,6 +1,6 @@
 #! /bin/bash
 
-TAG="LA.UM.9.1.r1-10600-SMxxx0.0" # make sure what tag branch you need to merged x update
+TAG="LA.UM.7.2.c6-09000-sdm660.0" # make sure what tag branch you need to merged x update
 TYPE="update" # make sure what do want to do if update / merged
 
 git config --global user.name "vcyzteen"
@@ -11,23 +11,23 @@ then
       # qcacld
       git remote add qcacld https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0
       git fetch qcacld $TAG
-      git merge -s ours --no-commit FETCH_HEAD --allow-unrelated-histories
+      git merge -s ours --no-commit --allow-unrelated-histories FETCH_HEAD
       git read-tree --prefix=drivers/staging/qcacld-3.0 -u FETCH_HEAD
-      git commit -m "INITIAL MERGED qcacld-3.0 into $TAG" --signoff
+      git commit
 
       # fw-api
       git remote add fw-api https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api
       git fetch fw-api $TAG
-      git merge -s ours --no-commit FETCH_HEAD --allow-unrelated-histories
+      git merge -s ours --no-commit --allow-unrelated-histories FETCH_HEAD
       git read-tree --prefix=drivers/staging/fw-api -u FETCH_HEAD
-      git commit -m "INITIAL MERGED fw-api into $TAG" --signoff
+      git commit
 
       # qca-wifi-host-cmn
       git remote add qca-wifi-host-cmn https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn
       git fetch qca-wifi-host-cmn $TAG
-      git merge -s ours --no-commit FETCH_HEAD --allow-unrelated-histories
+      git merge -s ours --no-commit --allow-unrelated-histories FETCH_HEAD
       git read-tree --prefix=drivers/staging/qca-wifi-host-cmn -u FETCH_HEAD
-      git commit -m "INITIAL MERGED qca-wifi-host into $TAG" --signoff
+      git commit
 fi
 
 if [ $TYPE = "update" ]
