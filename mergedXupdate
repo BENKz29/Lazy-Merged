@@ -1,6 +1,6 @@
 #! /bin/bash
 
-TAG="LA.UM.7.2.c6-09000-sdm660.0" # make sure what tag branch you need to merged x update
+TAG="LA.UM.7.2.r1-09600-sdm660.0" # make sure what tag branch you need to merged x update
 TYPE="update" # make sure what do want to do if update / merged
 
 git config --global user.name "vcyzteen"
