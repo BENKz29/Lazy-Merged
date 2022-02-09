@@ -30,7 +30,7 @@ then
       git commit
       
       # techpack
-      git remote add qca-wifi-host-cmn https://source.codeaurora.org/quic/la/platform/vendor/opensource/audio-kernel
+      git remote add techpack https://source.codeaurora.org/quic/la/platform/vendor/opensource/audio-kernel
       git fetch techpack $TAG
       git merge -s ours --no-commit --allow-unrelated-histories FETCH_HEAD
       git read-tree --prefix=techpack -u FETCH_HEAD
