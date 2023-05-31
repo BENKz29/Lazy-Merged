@@ -4,8 +4,8 @@ TAG="LA.UM.7.2.c27-03900-sdm660.0" # make sure what tag branch you need to merge
 TYPE="merged" # make sure what do want to do if update / merged
 VERSION="4.4"
 
-git config --global user.name "Kneba"
-git config --global user.email "abenkenary3@gmail.com"
+#git config --global user.name "Kneba"
+#git config --global user.email "abenkenary3@gmail.com"
 
 if [ $VERSION = "4.4" ]
 then
